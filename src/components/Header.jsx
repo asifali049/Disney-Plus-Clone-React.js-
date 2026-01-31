@@ -7,7 +7,7 @@ import { MdLiveTv } from "react-icons/md";
 import profileIcon from "../assets/profile-icon.png";
 
 function Header() {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
 
   const menu = [
     { icon: HiHome, name: "Home" },
@@ -19,7 +19,8 @@ function Header() {
   ];
 
   return (
-    <div className="flex items-center  justify-between bg-white p-5">
+    <div className="flex items-center  justify-between bg-white p-5 ">
+      {" "}
       <div className="flex gap-8 items-center">
         <img
           src={logo}
@@ -49,11 +50,7 @@ function Header() {
           ) : null}
         </div>
       </div>
-      <img
-        src={profileIcon}
-        alt="Profile"
-        className="w-[40px] h-[40px] rounded-full"
-      />
+      <img src={profileIcon} alt="Profile" className="w-10 h-10 rounded-full" />
     </div>
   );
 }
