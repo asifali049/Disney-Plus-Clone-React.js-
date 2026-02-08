@@ -30,15 +30,16 @@ function Slider() {
   return (
     <div className="">
       <IoIosArrowBack
-        className="hidden md:block text-[30px] absolute mx-8 mt-42.5 cursor-pointer "
+        className="hidden md:block text-[60px]  absolute  mx-8 mt-42.5 cursor-pointer "
         onClick={() => sliderLeft(elementRef.current)}
       />
       <IoIosArrowForward
-        className="hidden md:block text-[30px] absolute mx-8 mt-42.5 cursor-pointer right-0"
+        className="hidden md:block text-[60px] absolute mx-8 mt-42.5 cursor-pointer right-0"
         onClick={() => sliderRight(elementRef.current)}
       />
       <div
-        className="flex overflow-x-auto w-full px-16 py-4 space-x-4 scrollbar-hide scroll-smooth"
+        className="flex overflow-y-hidden w-full px-16 py-4 space-x-4 scrollbar-hide scroll-smooth
+        "
         ref={elementRef}
       >
         {movieslist.map((item) => (
