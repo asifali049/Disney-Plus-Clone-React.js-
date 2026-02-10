@@ -49,7 +49,7 @@ function ProductionHouse() {
             loop
             playsInline
             muted
-            className="absolute w- rounded-md z-0 opacity-0 md:hover:opacity-75 hidden md:block "
+            className="absolute w-full rounded-md z-0 opacity-0 md:hover:opacity-75 hidden md:block "
           ></video>
           <img src={item.image} className="w-full z-1 opacity-100 " alt="" />
         </div>
